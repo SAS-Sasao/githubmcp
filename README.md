@@ -2,6 +2,30 @@
 
 このMCPサーバーは、GitHub APIを使用して、リポジトリの情報取得やイシュー・プルリクエストの操作を行うための機能を提供します。
 
+## MCP（Model Context Protocol）サーバー
+
+このプロジェクトでは、以下のMCPサーバーを利用して機能を拡張しています。
+
+### GitHub MCPサーバー
+
+GitHub APIを操作するためのMCPサーバーです。以下の機能を提供します：
+
+- **get_repo_info**: GitHubリポジトリの情報を取得
+- **create_issue**: GitHubリポジトリに新しいイシューを作成
+- **list_issues**: GitHubリポジトリのイシュー一覧を取得
+- **create_pull_request**: GitHubリポジトリに新しいプルリクエストを作成
+- **list_pull_requests**: GitHubリポジトリのプルリクエスト一覧を取得
+
+### PlaywriteMCP（login-test-server）
+
+ログイン機能をテストするためのMCPサーバーです。以下の機能を提供します：
+
+- **login_test**: ユーザーIDとパスワードを使用してログイン機能をテスト
+  - 指定されたAPIエンドポイント（デフォルト: http://localhost:4322）にログインリクエストを送信
+  - ログイン結果をJSON形式で返却
+
+これらのMCPサーバーは、AIアシスタントが直接APIと連携するための仕組みを提供し、開発効率と機能性を向上させています。
+
 ## 機能
 
 このMCPサーバーは以下の機能を提供します：
