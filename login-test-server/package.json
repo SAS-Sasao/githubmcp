@@ -1,0 +1,21 @@
+{
+  "name": "login-test-server",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.9.0",
+    "@types/node": "^22.14.1",
+    "axios": "^1.8.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
